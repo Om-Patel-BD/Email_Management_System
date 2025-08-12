@@ -1,0 +1,72 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+}
+
+.card-header {
+    border-bottom: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto; /* Pushes footer down */
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: #212529; /* Dark background */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.profile-initials {
+    background-color: #00897b; /* Teal circle */
+    color: #fff;              /* White text */
+    border-radius: 50%;       /* Make it round */
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 10px;        /* Space from Logout */
+    cursor: pointer;          /* Optional: make it look clickable */
+}
+
+.navbar-nav .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+
