@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "manage.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*)", "dest": "/manage.py" }
+  ],
+  "env": {
+  "ALLOWED_HOST": "*",
+  "DJANGO_SECRET_KEY": "w@!6v#2^k8z$1b0n3r4t7y9u5e6i2o0p!q3w8e7r6t5y4u3i2o1p0z9x8c7v6b5n4m3l2k1j0h9g8f7d6s5a4",
+  "DATABASE_URL": "your-database-url"
+  },
+  "buildCommand": "bash postinstall.sh"
+}
